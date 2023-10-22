@@ -8,8 +8,7 @@ internal class Program
         using (BinaryReader bR = new BinaryReader(fS))
         {
             fS.Seek(0, SeekOrigin.Begin);
-
-
+            
             char[] header = bR.ReadChars(2);
 
             if (header[0] == 'B' && header[1] == 'M')
